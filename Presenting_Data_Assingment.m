@@ -28,22 +28,22 @@ y(t+1)=y(t)+vy(t+1);
 %assigning max velocity and position
 if abs(vx(t+1))>vxmax
     vxmax=abs(vx(t+1));
-    tvxmax=t;
+    tvxmax=t+1;
 end
 
 if abs(vy(t+1))>vymax
     vymax=abs(vy(t+1));
-    tvymax=t;
+    tvymax=t+1;
 end
 
 if abs(x(t+1))>xmax
     xmax=abs(x(t+1));
-    txmax=t;
+    txmax=t+1;
 end
 
 if abs(y(t+1))>ymax
     ymax=abs(y(t+1));
-    tymax=t;
+    tymax=t+1;
 end  
 
 end
